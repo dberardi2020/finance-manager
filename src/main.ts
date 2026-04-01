@@ -13,13 +13,13 @@ import UserAuthHandler from "@/mixins/UserAuthHandler";
 import RoutesHandler from "@/mixins/RoutesHandler";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBV60lSb6Y1Y8ojVOR4zYn6NBz5U-cd9x4",
-  authDomain: "finance-manager-4d396.firebaseapp.com",
-  projectId: "finance-manager-4d396",
-  storageBucket: "finance-manager-4d396.appspot.com",
-  messagingSenderId: "972635535553",
-  appId: "1:972635535553:web:d57ed9013af32c2859fc40",
-  measurementId: "G-S510X5YFW7",
+  apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
+  authDomain: process.env.VUE_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.VUE_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.VUE_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.VUE_APP_FIREBASE_APP_ID,
+  measurementId: process.env.VUE_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
